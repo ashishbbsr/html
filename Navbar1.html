@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar in Css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* Styling navbar */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: aqua;
+            padding: 20px;
+        }
+        /* styling logo */
+        .logo{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .menu{
+            display: flex;
+            gap: 2em;
+        }
+        .menu li:hover{
+            background-color: rgb(147, 241, 241);
+            border-radius: 30px;
+        }
+       .menu li{
+           padding: 5px 12px;
+       }
+       .news{
+           position: relative;
+       }
+       ul{
+           background-color: rgb(207, 230, 184);
+           display: none;
+           padding: 1em 0;
+            position: absolute;
+            top: 35px;
+           
+       }
+       ul li{
+           margin: 10px;
+           padding: 1em, 1em;
+           width: 10em;
+       }
+       .news:hover ul{
+           display: block;
+       }
+       /* Styling header */
+       header{
+           background-color: rgb(237, 63, 150);
+           height: 100vh;
+           width: 100%;
+       }
+       /* Styling h1 */
+       h1{
+           text-align: center;
+           padding-top: 100px;
+           text-transform: uppercase;
+           font-family: cursive;
+       }
+       /* Styling paragraph */
+       p{
+           text-align: center;
+           text-transform: capitalize;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+      
+    </style>
+</head>
+<body>
+    <!-- Creating nav bar -->
+    <nav class="navbar">
+        <div class="logo">Ashish kumar</div>
+        <!-- Creating menu -->
+        <div class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="news">
+                <!-- Creating subdorop -->
+                <a href="#">News</a>
+                <ul>
+                    <li><a href="#">Sublink1</a></li>
+                    <li class="subdrop">
+                        <a href="#">Sublink 2</a>
+                    </li>
+                    <li><a href="#">Sublink3</a></li>
+                    <li><a href="#">Sublink4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </div>
+    </nav>
+    <header>
+        <h1>WELOCME TO MY PAGE</h1>
+        <p>First Navbar of website of html.</p>
+    </header>
+</body>
+</html>
