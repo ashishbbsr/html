@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        body{
+            background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(image/iter.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+       
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+       
+        .navbar{
+           height: 7vh; 
+            /* background-color: rgba(46, 42, 42, 0.2); */
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        .navbar .logo{
+            color:white;
+            width: 35%;
+            text-align: left;
+            text-transform: uppercase;
+            margin: 13px;
+            padding-left: 12px;
+            font-size: 30px;
+        }
+       
+        .navitems,li{
+            list-style: none;
+            padding: 5px 15px;
+            margin: 0px 17px;
+            display: flex;
+            width: 35%;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        /* Navlinks hover effect styling  */
+        .navitems li a::after{
+            content: " ";
+            width: 0%;
+            height: 4px;
+            background: #f44336;
+            display: block;
+            margin:auto;
+            transition: 0.4s;
+        }
+        .navitems li a:hover::after{
+            width: 80%;
+        }
+        .header{
+           position: relative;
+           height: 90vh;
+           
+         
+        }
+        .text-box{
+            text-align: center;
+            color: fuchsia;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+        }
+        .text-box h1{
+            font-size: 65px;
+
+        }
+        .text-box p{
+            margin: 10px 0px 35px;
+            font-size: 25px;
+        }
+        .btn{
+            text-decoration: none;
+            display: inline;
+            color:red;
+            border: 2px solid #fff ;
+            font-size: 26px;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+
+        }
+        .btn:hover{
+            border: 1px solid #f44336;
+            background-color: #f44336;
+            color: deepskyblue;
+            transition: 1s;
+        }
+        @media(max-width:1570px){
+            .navitems{
+                width: 65%;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        @media(max-width:772px){
+            .navbar{
+                position:relative;
+                height: 100vh;
+                background-color:blue;
+               
+            }
+            .navitems{
+                display: block; 
+                position: absolute; 
+                top: 80px; 
+               
+            }
+            .navbar .logo{
+                color: #f44336;
+            }
+            .navitems li a{
+                padding: 20px 150px;
+                 margin: 7px 36px;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Iter</div>
+        <ul class="navitems">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <section class="header">
+        <div class="text-box">
+            <h1>Bhubaneshwar Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world.<br>
+                you just need to learn HTML , Css ,Javascript and you are good 
+                to go.
+            </p>
+            <a href="#" class="btn">Visit us to know More</a>
+        </div>
+    </section>
+</body>
+</html>
